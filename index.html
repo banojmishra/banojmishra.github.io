@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banoj - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Banoj's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-5">
+        <section class="home-section" id="home">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="text-greenyellow">Banoj</span></div>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="downloadResume()">Download Resume</button>
+                    <button class="btn" onclick="visitGithub()">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <section class="about-section mt-5" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="skill-card">
+                            <h3 class="fw-bolder ">Skills</h3>
+                            <!-- <div class="skill">
+                                <span>C++</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>C#</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>BOOTSTRAP</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>SQL</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>HTML</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>CSS</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>JAVASCRIPT</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>DYNAMICS 365</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div> -->
+                            <div class="skill" data-progress="65">
+                                <span>C++</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="80">
+                                <span>C#</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="95">
+                                <span>BOOTSTRAP</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="90">
+                                <span>SQL</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="95">
+                                <span>HTML</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="80">
+                                <span>CSS</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="85">
+                                <span>JAVASCRIPT</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-progress="95">
+                                <span>DYNAMICS365</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-description">
+                            <h2 class="fw-bolder ">About Me</h2>
+                            <p>
+                                With over 2 years of comprehensive experience in the field of MS Dynamics 365
+                                Developmet,
+                                accompanied by a bachelor's degree in engineering. Proficient in D365 devlopment, CRM
+                                customization,
+                                workflow automation, data integration, and system optimization.
+                                Demonstrated success in leading impactful projects and providing effective mentorship.
+                            </p>
+                            <div class="additional-info">
+                                <p><span class="title-s">Name: </span> <span>Banoj Kumar Mishra</span></p>
+                                <p><span class="title-s">Education: </span> <span>Bachelor of Engineering</span></p>
+                                <p><span class="title-s">Technologies: </span> <span>C++, C#, HTML, BOOTSTRAP, CSS,
+                                        JAVASCRIPT, SQL,
+                                        D365</span></p>
+                                <p><span class="title-s">Job Role: </span> <span>Dynamics 365 Developer</span></p>
+                                <p><span class="title-s">Experience: </span> <span>2 Years 3 Months</span></p>
+                                <p><span class="title-s">Address: </span> <span>Odisha, India</span></p>
+                                <p><span class="title-s">Language: </span> <span>English, Hindi, Odia</span></p>
+                                <p><span class="title-s">Interest: </span> <span>Fitness Enthusiast</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="technology-section mt-5" id="technology">
+            <div class="container text-center">
+                <h1 class="mb-2 fw-bolder">Technology</h1>
+                <hr class="my-4 custom-hr">
+                <div class="technology-images" id="technologyImages">
+                    <div class="image-container">
+                        <img src="c-plus-plus-programming-language-icon.png" alt="Technology 1">
+                    </div>
+                    <div class="image-container">
+                        <img src="c-sharp-programming-language-icon.png" alt="Technology 2">
+                    </div>
+                    <div class="image-container">
+                        <img src="bootstrap-4-icon.png" alt="Technology 3">
+                    </div>
+                    <div class="image-container">
+                        <img src="sql-server-icon.png" alt="Technology 4">
+                    </div>
+                    <div class="image-container">
+                        <img src="html-icon.png" alt="Technology 5">
+                    </div>
+                    <div class="image-container">
+                        <img src="css-icon.png" alt="Technology 6">
+                    </div>
+                    <div class="image-container">
+                        <img src="javascript-programming-language-icon.png" alt="Technology 7">
+                    </div>
+                    <div class="image-container">
+                        <img src="D365.png" alt="Technology 8">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="education-section mt-5" id="education">
+            <div class="container text-center">
+                <h1 class="mb-2 fw-bolder">Education</h1>
+                <hr class="my-4 custom-hr">
+                <div class="row mt-5">
+                    <!-- First Card - Schooling -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card education-card">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold">2007-2017</h1>
+                                <p class="card-text fw-bold fs-2">Schooling</p>
+                                <p class="card-text fw-bold fs-5">N.S High School, Adheigundi</p>
+                                <p class="card-text">Grade: First class distinction</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Second Card - College -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card education-card">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold">2017-2019</h1>
+                                <p class="card-text fw-bold fs-2">College</p>
+                                <p class="card-text fw-bold fs-5">Government College, Angul</p>
+                                <p class="card-text">Grade: First class distinction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Centered Third Card - Graduation -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="card education-card">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold">2019-2023</h1>
+                                <p class="card-text fw-bold fs-2">Graduation</p>
+                                <p class="card-text fw-bold fs-5">Centurion University of Technology and Management, Bhubaneswar</p>
+                                <p class="card-text">Grade: First class distinction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-section mt-5" id="contact">
+            <div class="container text-center">
+                <h1 class="mb-2 fw-bolder">Contact</h1>
+                <hr class="my-4 custom-hr">
+                <p class="mt-3">Below are the details to reach out to me!</p>
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="text-greenyellow">
+                                <span class="fs-1"><i class="fa-solid fa-address-card fa-flip"></i></span>
+                                <h3 class="mb-4 fs-4 fw-bolder">Address</h3>
+                            </div>
+                            <p>Odisha, India</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="text-greenyellow">
+                                <span class="fs-1 "><i class="fa-solid fa-phone fa-flip"></i></span>
+                                <h3 class="mb-4 fs-4 fw-bolder">Contact Number</h3>
+                            </div>
+                            <p>+91 799 100 5032</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="text-greenyellow">
+                                <span class="fs-1"><i class="fa-solid fa-envelope fa-flip"></i></span>
+                                <h3 class="mb-4 fs-4 fw-bolder ">Email Address</h3>
+                            </div>
+                            <p>banojkumarmishra3@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-5">
+            <div class="text-center text-greenyellow">
+                Copyright &#169 banojsportfolio.com | All rights reserved
+            </div>
+            <button id="scrollToTopBtn" onclick="scrollToTop()" class="scroll-to-top-btn" title="Go to Top">
+                <i class="fa-solid fa-arrow-up fa-flip fa-xl"></i>
+            </button>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Dynamics 365 Developer', 'Frontend Developer', 'Backend Developer', 'Full Stack Developer'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
