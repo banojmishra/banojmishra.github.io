@@ -1,5 +1,5 @@
 function downloadResume() {
-    var fileUrl = 'https://github.com/Banoj458/My-Documents/raw/main/Banoj_Mishra.pdf';
+    var fileUrl = 'https://github.com/Banoj458/My-Documents/raw/main/Banoj_Kumar_Mishra_Resume.pdf';
     var a = document.createElement('a');
     a.href = fileUrl;
     a.download = 'Banoj_Mishra.pdf';
